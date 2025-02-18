@@ -1,0 +1,550 @@
+@charset "utf-8";
+
+#cover .cover_star1,
+#cover .cover_star2,
+#cover .cover_star3,
+#cover .cover_star4{
+  position: absolute;
+  z-index: 3;
+}
+#cover .cover_star1{
+  right: 25%; top: 5%;
+  animation: star 4s infinite;
+}
+#cover .cover_star2{
+  right: 15%; top: 15%;
+  animation: star 6s infinite;
+}
+#cover .cover_star3{
+  left: 5%; bottom: 30%;
+  transform: scale(0.7 , 0.7);
+  animation: star 5s infinite;
+}
+#cover .cover_star4{
+  left: 12%; bottom: 15%;
+  transform: scale(1.1 , 1.1);
+  animation: star 7s infinite;
+}
+#cover > img{
+  width: 100%; height: 100%;
+  position: absolute;
+  left: 0; top: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+#cover .cover_txt{
+  width: 100%; height: 100%;
+  position: relative;
+}
+#cover .cover_txt img:first-of-type{
+  position: absolute;
+  left: 13.5%; top: 10%;
+}
+#cover .cover_txt p{
+  width: auto; 
+  font-size: 160px;
+  font-weight: 800;
+  position: absolute;
+  left: 23.5%; top: 30%;
+  letter-spacing: 15px;
+}
+#cover .cover_txt p:hover span{
+  background-color: #000;
+  color: #ff6b00;
+}
+#cover .cover_txt p span{
+  display: inline-block;
+  background-color: #ff6b00;
+  padding: 0 3px;
+  border-top-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+  color: #fff;
+  transition: all 0.5s;
+}
+#cover .cover_txt img:last-of-type{
+  position: absolute;
+  right: 12.3%; bottom: 0;
+}
+
+#content{
+  position: relative;
+}
+#content img{
+  object-fit: contain;
+  position: absolute;
+  left: 35%; top: 0;
+}
+#content h2{
+  display: none;
+}
+
+#content ul{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%; top: 80px;
+  transform: translateX(-35%);
+}
+#content ul li{
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+#content ul li a{
+  transition: all 0.5s;
+  opacity: 0.7;
+}
+#content ul li:hover a{
+  opacity: 1;
+}
+#content ul li:first-of-type{
+  padding-bottom: 75px;
+}
+#content ul li a span{
+  display: block;
+  font-size: 18px;
+  margin-left: 55px;
+  padding-bottom: 35px;
+}
+#content ul li:nth-of-type(6){
+  padding-bottom: 75px;
+}
+
+#profile .pro-content{
+  display: flex;
+}
+#profile .pro-content .left-pro{
+  width: calc(100% * 0.4);
+  position: relative;
+  padding-left: 90px;
+}
+#profile .pro-content .left-pro img{
+  width: 390px; height: 390px;
+  position: absolute;
+  left: 50%; top: 0;
+  transform: translateX(-50%);
+  object-fit: contain;
+  padding-bottom: 35px;
+}
+#profile .pro-content .left-pro h2{
+  margin-top: 420px;
+  font-weight: normal;
+  font-size: 30px;
+  padding-bottom: 45px;
+}
+#profile .pro-content .left-pro h2 span{
+  background-color: #ffd792;
+  display: inline-block;
+  font-weight: 800;
+}
+#profile .pro-content .left-pro p{
+  font-size: 18px;
+  padding-bottom: 15px
+}
+#profile .pro-content .left-pro p span{
+  font-weight: 700;
+  display: block;
+  padding-bottom: 15px;
+}
+
+#profile .pro-content .right-pro{
+  width: calc(100% * 0.6);
+}
+#profile .pro-content .right-pro .pro-head{
+  width: 100%;
+  border-bottom: 2px solid #999;
+  display: flex;
+  gap: 300px;
+  padding-bottom: 20px;
+  padding-left: 90px;
+}
+#profile .pro-head h3{
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+#profile .pro-head .pro-name p{
+  font-size: 48px;
+  font-weight: 700;
+}
+#profile .pro-head .pro-name p span{
+  font-size: 24px;
+  font-weight: 400;
+  display: block;
+  color: #666;
+}
+#profile .pro-head .pro-name p span strong{
+  color: #333;
+}
+#profile .pro-head .pro-tit{
+  padding-top: 85px;
+}
+#profile .pro-head .pro-tit ul{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 10px;
+}
+#profile .pro-head .pro-tit ul li{
+  display: flex;
+  gap: 5px;
+}
+#profile .pro-head .pro-tit ul li img{
+  width: 17px;
+  object-fit: contain;
+}
+#profile .pro-head .pro-tit ul li:nth-of-type(2) img{
+  width: 15px;
+  margin-right: 5px;
+}
+#profile .pro-head .pro-tit ul li:nth-of-type(3) img{
+  width: 20px;
+}
+#profile .pro-head .pro-tit ul li span{
+  display: block;
+}
+#profile .pro-main{
+  padding-top: 20px;
+  padding-left: 90px;
+  display: flex;
+  gap: 60px;
+}
+#profile .pro-main h3{
+  font-size: 27px;
+  padding-bottom: 20px;
+}
+#profile .pro-main .pro-li{
+  font-size: 16px;
+  font-weight: 700;
+}
+#profile .pro-main .pro-li > li{
+  display: flex;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+#profile .pro-main .pro-edu .pro-li > li:last-of-type,
+#profile .pro-licese .pro-li > li{
+  padding-top: 20px;
+  position: relative;
+}
+#profile .pro-main .pro-edu .pro-li > li:last-of-type ul li:first-of-type::before{
+  content: "(재)부산인재개발원 부산IT교육센터";
+  display: block;
+  position: absolute;
+  left: 68px; top: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+#profile .pro-main .pro-li li ul li:nth-of-type(2){
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+#profile .pro-licese .pro-li li{
+  width: 400px;
+}
+#profile .pro-licese .pro-li > li ul > li:first-of-type::before{
+  content: "한국산업인력공단";
+  display: block;
+  position: absolute;
+  left: 68; top: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+#profile .pro-main .pro-skill{
+  padding-top: 30px;
+}
+#profile .pro-main .pro-skill img{
+  width: 320px; height: auto;
+  object-fit: contain;
+  margin-left: 20px;
+}
+#profile .pro-main .pro-exp .pro-skill{
+  padding-top: 20px;
+}
+#profile .pro-main .pro-exp .pro-skill h3{
+  display: none;
+}
+
+.ulsan{
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.ulsan .ulsan-img{
+  position: relative;
+  width: calc(100% * 0.5);
+}
+.ulsan .ulsan-img img{
+  width: 100%; height: auto;
+  object-fit: contain;
+}
+.ulsan .txt{
+  width: calc(100% * 0.5);
+  padding-left: 3%;
+}
+.txt h2{
+  padding-top: 35px;
+  font-size: 46px;
+  font-weight: 800;
+}
+.txt > p:first-of-type{
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.txt .exp li{
+  width: 440px;
+  padding-bottom: 15px;
+}
+.txt .exp > li > ul{
+  display: flex;
+  justify-items: flex-end;
+}
+.txt .txt-button{
+  display: flex;
+  gap: 20px;
+}
+.txt .txt-button li{
+  display: flex;
+  justify-items: flex-end;
+  width: 140px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: #c6ac66;
+  position: relative;
+  margin-bottom: 80px;
+  transition: all 0.5s;
+}
+.txt .txt-button li:hover{
+  background-color: #928258;
+}
+.txt .txt-button li:nth-of-type(2){
+  width: 175px;
+}
+.txt .txt-button li a{
+  color: #fff;
+}
+.txt .txt-button li img{
+  width: auto; height: 18px;
+  object-fit: contain;
+  position: absolute;
+  right: 5px; top: 6px;
+}
+.txt .project-bg h3{
+  font-size: 24px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+#ulsanmuseum-main{
+  background-color: #96a96e;
+}
+#ulsanmuseum-main .main-img{
+  position: relative;
+}
+#ulsanmuseum-main .main-img img:nth-of-type(1){
+  width: 600px; height: auto;
+  object-fit: contain;
+  position: absolute;
+  left: 45px; bottom: -459px;
+  z-index: 3;
+}
+#ulsanmuseum-main .main-img img:nth-of-type(2){
+  width: 600px; height: auto;
+  object-fit: contain;
+  position: absolute;
+  left: 530px; top: -460px;
+}
+#ulsanmuseum-main .main-txt{
+  position: absolute;
+  right: 12%; top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+#ulsanmuseum-main .main-txt h2{
+  font-size: 46px;
+  font-weight: 800;
+  position: relative;
+  padding: 20px 0;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+}
+#ulsanmuseum-main .main-txt h2 span{
+  font-size: 36px;
+  display: block;
+}
+#ulsanmuseum-main .main-txt h2::before{
+  content: "";
+  display: block;
+  width: 120%; height: 5px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%; top: 0;
+  transform: translateX(-50%);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+}
+#ulsanmuseum-main .main-txt h2::after{
+  content: "";
+  display: block;
+  width: 120%; height: 5px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%; bottom: 0;
+  transform: translateX(-50%);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.cook{
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.cook .cook-img{
+  position: relative;
+  width: calc(100% * 0.5);
+}
+.cook .cook-img img{
+  width: 100%; height: auto;
+  object-fit: contain;
+}
+.cook .txt{
+  width: calc(100% * 0.5);
+  padding-left: 3%;
+}
+.maton-1{
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.maton-1 .maton_img{
+  position: relative;
+  width: calc(100% * 0.5);
+}
+.maton-1 .maton_img img{
+  width: 100%; height: auto;
+  object-fit: contain;
+}
+.maton-1 .txt{
+  width: calc(100% * 0.5);
+  padding-left: 3%;
+}
+.moa_1{
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.moa_1 .moa_img{
+  position: relative;
+  width: calc(100% * 0.5);
+}
+.moa_1 .moa_img img{
+  width: 100%; height: 650px;
+  object-fit: cover;
+}
+.moa_1 .txt{
+  width: calc(100% * 0.5);
+  padding-left: 3%;
+}
+.other_1{
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.other_1 .other_img{
+  position: relative;
+  width: calc(100% * 0.5);
+}
+.other_1 .other_img img{
+  width: 100%; height: auto;
+  object-fit: contain;
+}
+.other_1 .txt{
+  width: calc(100% * 0.5);
+  padding-left: 3%;
+}
+.other_1 .txt-button{
+  right: 3px;
+}
+#contact .txt{
+  text-align: center;
+}
+#contact .txt h2{
+  padding-bottom: 50px;
+}
+#contact .txt h2 br{
+  display: none;
+}
+#contact .txt .project-bg h3{
+  padding-bottom: 20px;
+}
+#contact .txt .project-bg p{
+  font-size: 36px;
+  line-height: 1.5;
+  padding-bottom: 100px;
+}
+#contact .txt .project-bg p span{
+  display: inline-block;
+  font-weight: 700;
+  background-color: #ffd792;
+}
+#contact .txt .project-bg p .name{
+  font-size: 44px;
+  background-color: transparent;
+}
+#contact .txt .project-bg a{
+  margin: 0 auto;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  padding: 10px 15px;
+  border-radius: 40px;
+  background-color: #c6ac66;
+  position: relative;
+  color: #fff;
+  transition: all 0.5s;
+  font-size: 24px;
+}
+#contact .txt .project-bg a:hover{
+  background-color: #928258;
+}
+#contact .txt .project-bg a span{
+  display: inline-block;
+  padding-right: 15px;
+}
+#contact .txt .project-bg a img{
+  width: 16px; height: auto;
+  object-fit: contain;
+}
+footer{
+  padding: 100px 0;
+  text-align: center;
+  background-color: #eee;
+  color: #666;
+}
+#contact .star_1,
+#contact .star_2,
+#contact .star_3,
+#contact .star_4,
+#contact .star_5{
+  position: absolute;
+}
+#contact .star_1{
+  left: 20%; top: 20%;
+  animation: star 6s infinite;
+}
+#contact .star_2{
+  right: 15%; top: 15%;
+  animation: star 4s infinite;
+}
+#contact .star_3{
+  right: 25%; top: 6%;
+  animation: star 5s infinite;
+}
+#contact .star_4{
+  left: 25%; bottom: 15%;
+  transform: scale(0.8 , 0.8);
+  animation: star 4s infinite;
+}
+#contact .star_5{
+  right: 25%; bottom: 10%;
+  transform: scale(0.9 , 0.9);
+  animation: star 6s infinite;
+}
+footer p:first-of-type{
+  padding-bottom: 10px;
+}
